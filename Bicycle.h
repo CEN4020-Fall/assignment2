@@ -13,13 +13,12 @@ private:
     int myGearCount;
 
 public:
-    Bicycle(int gearCount = 1);
-
+    explicit Bicycle(int gearCount = 1);
     int getGearCount();
-
     void setGearCount(int gearCount);
-
     virtual double mileageEstimate(double time);
+
+    virtual string toString();
 };
 
 

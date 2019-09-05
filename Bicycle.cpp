@@ -22,3 +22,7 @@ double Bicycle::mileageEstimate(double time) {
     mileage += mileage * (myGearCount * 0.1);
     return mileage;
 }
+
+string Bicycle::toString() {
+    return getBrand() + " " + getModel();
+}

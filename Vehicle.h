@@ -15,18 +15,13 @@ private :
     string myBrand, myModel;
 
 public:
-    Vehicle(string brand = "unknown", string model = "unknown");
-
+    explicit Vehicle(string brand = "unknown", string model = "unknown");
     string getBrand();
-
     void setBrand(string brand);
-
     string getModel();
-
     void setModel(string model);
 
-    string toString();
-
+    virtual string toString();
     virtual double mileageEstimate(
             double time) = 0; // Method that computes how many miles can be traversed by the vehicle in the given amount of time. The time parameter is given in minutes
 };
