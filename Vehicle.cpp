@@ -9,6 +9,8 @@ Vehicle::Vehicle(string brand, string model) {
     setModel(model);
 }
 
+Vehicle::~Vehicle() = default;
+
 string Vehicle::getBrand() {
     return myBrand;
 }
@@ -26,5 +28,5 @@ void Vehicle::setModel(string model) {
 }
 
 string Vehicle::toString() {
-    return getBrand() + " " + getModel();
+    return "\tBrand= " + getBrand() + "\n\tModel= " + getModel();
 }

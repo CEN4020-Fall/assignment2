@@ -5,9 +5,13 @@
 #include "Bicycle.h"
 
 
-Bicycle::Bicycle(int gearCount) {
+Bicycle::Bicycle(string brand, string model, int gearCount) {
+    setBrand(brand);
+    setModel(model);
     setGearCount(gearCount);
 }
+
+Bicycle::~Bicycle() = default;
 
 int Bicycle::getGearCount() {
     return myGearCount;
@@ -24,5 +28,7 @@ double Bicycle::mileageEstimate(double time) {
 }
 
 string Bicycle::toString() {
-    return getBrand() + " " + getModel();
+    string s = "-> Bicycle\n\t";
+    return "-> Bicycle\n" + Vehicle::toString() + "\n\tGears: " +
+           to_string(myGearCount);
 }

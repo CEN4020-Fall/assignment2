@@ -13,7 +13,9 @@ private:
     int myGearCount;
 
 public:
-    explicit Bicycle(int gearCount = 1);
+    explicit Bicycle(string brand, string model, int gearCount = 1);
+
+    virtual ~Bicycle();
     int getGearCount();
     void setGearCount(int gearCount);
     virtual double mileageEstimate(double time);

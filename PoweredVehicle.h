@@ -14,10 +14,13 @@ protected :
 public:
     PoweredVehicle();
 
+    virtual ~PoweredVehicle();
     virtual string toString();
-
     virtual double mileageEstimate(double time) = 0;
 
+    string getFuelType();
+
+    void setFuelType(string fuel);
 };
 
 
