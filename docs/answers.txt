@@ -8,5 +8,6 @@
 8. A) Inheritance is when you create subclasses of a certain class that inherit all of its properties. It's like a hierarchy of classes.
 B) Polymorphism is when you have multiple implementations of the same thing. This is most common with generic classes, when subclasses have to rewrite these generic functions.
 C) Encapsulation is when you bundle data and functions that work together within one unit. This will restrict direct access to certain object components.
-9. 
+9. The main difference is that in the dictator and lieutenants workflow, there is an extra layer of edits being made before reaching the final stage (dictator and integration manager) so there is less room for error and conflicts in the code. 
+10. A team of 100 would work much better with the Dictator and Lieutenants workflow because there is extra sifting through the code and more steps to ensure it all works together well (other than it all being pushed into the same repository and having conflict fixes being put on the developers).
 
