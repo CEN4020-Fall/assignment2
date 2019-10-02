@@ -1,7 +1,8 @@
 //
 // Created by Esteban Parra on 9/5/19.
 //
-
+#include <cstdlib>
+#include <ctime>
 #include "Jet.h"
 
 Jet::Jet() {
@@ -36,9 +37,9 @@ void Jet::setEngineSize(string engineSize) {
 }
 
 double Jet::mileageEstimate(double time) {
-    double mileage = 15 * time;
-    if (fuelType == "electricity") {
-        mileage += mileage * 0.05;
+    double mileage = (rand()%(100-40)+40) * time;
+    if (fuelType == "rocket" && numberOfEngines>=2) {
+        mileage += mileage * (0.055);
     }
     return mileage;
 }
