@@ -24,6 +24,6 @@ double Skateboard::mileageEstimate(double time) {
     return mileage;
 }
 
-string Bicycle::toString() {
+string Skateboard::toString() {
     return "-> Skateboard\n" + Vehicle::toString()
 }
