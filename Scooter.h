@@ -5,21 +5,22 @@
 #ifndef DRIVINGSIMULATOR_SCOOTER_H
 #define DRIVINGSIMULATOR_SCOOTER_H
 
-#include "Vehicle.h"
+#include "PoweredVehicle.h"
 
 #include <ctime>
 #include <cstdlib>
 
-class Scooter : public Vehicle {
+class Scooter : public PoweredVehicle {
 
 public:
-    explicit Scooter (string brand, string model );
+    Scooter();
+
+    explicit Scooter(string brand, string model, string fuelType);
 
     virtual ~Scooter();
     virtual double mileageEstimate(double time);
-
     virtual string toString();
 };
 
 
-#endif //DRIVINGSIMULATOR_SCOOTER_H
+#endif //DRIVINGSIMULATOR_JET_H
