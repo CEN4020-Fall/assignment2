@@ -20,7 +20,12 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
-
+    vehiclesArray[6] = new Jet();
+    vehiclesArray[7] = new Jet("NASA", "Apollo 13", "Rocket", 5);
+    vehiclesArray[8] = new Skateboard("Element", "45");
+    vehiclesArray[9] = new Scooter("GOTRAX", "RIVAL", "electricity");
+    vehiclesArray[10] = new Scooter();
+    
     printVehiclesRoster(vehiclesArray, size);
 
     if (vehiclesArray != 0) { // If it is not a null pointer
