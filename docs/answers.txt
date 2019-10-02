@@ -1,1 +1,12 @@
+1. This binary file has been added.
+2. 
+3. There is no .gitignore file.
+4. Branches are useful because it stops the programmer from having to copy files from directory to directory and it also keeps the master branch free from questionable code.
+5. Git status provides you the details of the files staged in the current directory but also provides the comparison with the origin branch. Git log just gives you a commit log from the directory.
+6. git log --Vehicle.h
+7. git log --grep=file
+8. A) Inheritance is when you create subclasses of a certain class that inherit all of its properties. It's like a hierarchy of classes.
+B) Polymorphism is when you have multiple implementations of the same thing. This is most common with generic classes, when subclasses have to rewrite these generic functions.
+C) Encapsulation is when you bundle data and functions that work together within one unit. This will restrict direct access to certain object components.
+9. 
 
