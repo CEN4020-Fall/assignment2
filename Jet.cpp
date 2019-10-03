@@ -30,8 +30,7 @@ double Jet::mileageEstimate(double time) {
 }
 
 string Jet::toString() {
-	return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Size: " +
-		getEngineSize();
+	return "-> Jet\n" + PoweredVehicle::toString();
 }
 
 void Jet::setNumberOfEngines(int engineCount){
