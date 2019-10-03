@@ -19,8 +19,8 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
-    vehiclesArray[6] = new Jet("Cessna", "Citation", "diesel", "grande");
-    vehiclesArray[7] = new Jet("Learjet", "31", "diesel", "grande");
+    vehiclesArray[6] = new Jet("Cessna", "Citation", "diesel", "grande",2);
+    vehiclesArray[7] = new Jet("Learjet", "31", "diesel", "grande",1);
     vehiclesArray[8] = new Skateboard("Zero", "Sandoval");
     vehiclesArray[9] = new Skateboard("Element", "Jaakko");
     vehiclesArray[10] = new RollerCoaster("Intamin","Taron", "Steel","diesel", "medium"); 
