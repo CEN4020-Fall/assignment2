@@ -15,7 +15,7 @@ private:
 public:
 	RollerCoaster();
 
-	explicit RollerCoaster(string manufacturer, string model, string fuelType, string engineSize);
+	explicit RollerCoaster(string manufacturer, string name, string model, string fuelType, string engineSize);
 
 	virtual ~Rollercoaster();
 	string getEngineSize();
