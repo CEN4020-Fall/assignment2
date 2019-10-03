@@ -3,7 +3,7 @@
 //
 
 #ifndef DRIVINGSIMULATOR_JET_H
-#define DRIVINGSIMULATOR_CAR_H
+#define DRIVINGSIMULATOR_JET_H
 
 #include "PoweredVehicle.h"
 
@@ -11,6 +11,7 @@ class Jet : public PoweredVehicle {
 
 private:
 	int numberOfEngines = 1;
+	string myEngineSize;
 
 public:
 	Jet();
@@ -26,4 +27,4 @@ public:
 	virtual string toString();
 };
 
-#endif //DRIVINGSIMULATOR_CAR_H
+#endif //DRIVINGSIMULATOR_JET_H
