@@ -16,14 +16,15 @@ double Skateboard::mileageEstimate(double time) {
     int r = rand() % 5 + 1;
     int d = r/100;
     double mileage = d * time;
+    int timeThird = time / 3;
     if ( time > 25 && time < 250 )
     {
-      int rr = rand() % ( (time / 3) + 1 ) + 1;
+      int rr = rand() % timeThird + 1;
       mileage += rr;
     }
     return mileage;
 }
 
 string Skateboard::toString() {
-    return "-> Skateboard\n" + Vehicle::toString()
+    return "-> Skateboard\n" + Vehicle::toString();
 }

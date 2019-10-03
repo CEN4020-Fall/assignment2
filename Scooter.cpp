@@ -22,11 +22,11 @@ Scooter::~Scooter() = default;
 
 //mileage estimate -- creates a random num, checks if electric or gas scooter
 //if a gas scooter, double the
-double Jet::mileageEstimate(double time) {
+double Scooter::mileageEstimate(double time) {
     double mileage = 5 * time;
     if ( fuelType == "gas" )
     {
-      mileage += milage * 3;
+      mileage += mileage * 3;
     }
     return mileage;
 }
