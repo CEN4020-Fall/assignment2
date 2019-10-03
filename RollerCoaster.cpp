@@ -10,8 +10,9 @@ RollerCoaster::RollerCoaster() {
 	setModel("Wooden");
 }
 
-RollerCoaster::RollerCoaster(string manufacturer, stirng model, string fuelType, string engineSize) {
+RollerCoaster::RollerCoaster(string manufacturer, string name, string model, string fuelType, string engineSize) {
 	setManufacturer(manufacturer);
+	setName(name);
 	setModel(model);
 	setFuelType(fuelType);
 	setEngineSize(engineSize);
