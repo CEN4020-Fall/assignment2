@@ -2,7 +2,7 @@
 // Created by Taylor Driver on 10/3/19
 //
 
-#ifndef DRIVIGSIMULATOR_ROLLERCOASTER_H
+#ifndef DRIVINGSIMULATOR_ROLLERCOASTER_H
 #define DRIVINGSIMULATOR_ROLLERCOASTER_H
 
 #include "PoweredVehicle.h"
@@ -19,7 +19,7 @@ public:
 
 	virtual ~Rollercoaster();
 	string getEngineSize();
-	void setEngineSize(String engineSize);
+	void setEngineSize(string engineSize);
 	virtual double mileageEstimate(double time);
 	virtual string toString();
 };
