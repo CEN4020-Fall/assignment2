@@ -4,7 +4,6 @@
 #include <string>
 
 Jet::Jet() {
-	myEngineSize = "unknown";
 	setBrand("unknown");
 	setModel("unkown");
 	setNumberOfEngines(1);
@@ -14,26 +13,10 @@ Jet::Jet(string brand, string model, string fuelType, string engineSize, int num
 	setBrand(brand);
 	setModel(model);
 	setFuelType(fuelType);
-	setEngineSize(engineSize);
 	setNumberOfEngines(numberOfEngines);
 }
 
 Jet::~Jet() = default;
-
-string Jet::getEngineSize() {
-	return myEngineSize;
-}
-
-void Jet::setEngineSize(string engineSize) {
-	if (engineSize == "unknown" || engineSize == "small" ||
-		engineSize == "medium" || engineSize == "grande") {
-		myEngineSize = engineSize;
-	}
-	else {
-		myEngineSize = "unknown";
-	}
-
-}
 
 double Jet::mileageEstimate(double time) {
 	srand((unsigned)time(0));
