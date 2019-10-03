@@ -4,13 +4,15 @@
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
+#include "Skateboard.h"
+#include "Scooter.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
     srand(time(0));
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
+    int size = 10;
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
@@ -25,7 +27,7 @@ int main() {
     vehiclesArray[8] = new Skateboard("Element", "45");
     vehiclesArray[9] = new Scooter("GOTRAX", "RIVAL", "electricity");
     vehiclesArray[10] = new Scooter();
-    
+
     printVehiclesRoster(vehiclesArray, size);
 
     if (vehiclesArray != 0) { // If it is not a null pointer
