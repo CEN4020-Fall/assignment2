@@ -17,7 +17,7 @@ public:
 
 	explicit RollerCoaster(string manufacturer, string name, string model, string fuelType, string engineSize);
 
-	virtual ~Rollercoaster();
+	virtual ~RollerCoaster();
 	string getEngineSize();
 	void setEngineSize(string engineSize);
 	virtual double mileageEstimate(double time);
