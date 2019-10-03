@@ -1,6 +1,6 @@
 1. This binary file has been added.
 2. 
-3. There is no .gitignore file.
+3. Sep. 25th, 2019; 6:13 PM.
 4. Branches are useful because it stops the programmer from having to copy files from directory to directory and it also keeps the master branch free from questionable code.
 5. Git status provides you the details of the files staged in the current directory but also provides the comparison with the origin branch. Git log just gives you a commit log from the directory.
 6. git log --Vehicle.h
