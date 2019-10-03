@@ -4,20 +4,22 @@ Your branch is up to date with 'origin/master'.
 e.b)	git rev-list --all --count
 8
 
-e.c)
+e.c)	git log --follow .gitignore
 
+Date:   Wed Sep 25 18:13:30 2019 -0400
 e.d)
 
 e.e)
 
-e.f)
+e.f)	git log -p Vehicle.h
 
-e.g)
+e.g)	git log --all --grep='file'
 
 e.h)
 
-e.i)
+e.i)	Integration workflows users have public and private branches to work from.
 
-e.j)
+e.j)	It allows for only one person to push to the master instead of multiple small developers pushing to the master and causing issues.
+
 
 

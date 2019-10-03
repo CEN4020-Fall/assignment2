@@ -1,5 +1,5 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by Kristen Davis
 //
 
 #ifndef DRIVINGSIMULATOR_BICYCLE_H
@@ -10,14 +10,14 @@
 class Bicycle : public Vehicle {
 
 private:
-    int myGearCount;
+    int numberofwheels;
 
 public:
     explicit Bicycle(string brand, string model, int gearCount = 1);
 
     virtual ~Bicycle();
     int getGearCount();
-    void setGearCount(int gearCount);
+    void setGearlCount(int gearCount);
     virtual double mileageEstimate(double time);
 
     virtual string toString();
