@@ -23,3 +23,6 @@ e.j)	It allows for only one person to push to the master instead of multiple sma
 
 
 
+5)
+The Driving simulator prototype uses polymorphism since it sets the brand and model of a vehicle regardless of its a powered vehicle or an unpowerd vehicle.
+The Driving simulator prototype uses encapsulation since all the different aspects of the vehicle are in the private data section.
