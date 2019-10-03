@@ -9,7 +9,9 @@
 #include <iostream>
 
 Jet::Jet() {
-
+	myEngineSize = "unknown";
+	setBrand("Custom");
+	setModel("V6");
 }
 
 Jet::Jet(string brand, string model, string fuelType, string engineSize, int engineNum) {
