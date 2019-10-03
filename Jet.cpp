@@ -10,6 +10,7 @@
 
 Jet::Jet() {
 	myEngineSize = "unknown";
+	myEngineNum = 1;
 	setBrand("Custom");
 	setModel("V6");
 }
