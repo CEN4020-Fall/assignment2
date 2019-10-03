@@ -12,7 +12,7 @@ Tank::Tank() {
     setnumberofGuns(2);
 }
 
-Tank::Tank(string camo, string n,string m, int num) {
+Tank::Tank(string camo, string n,string m, int num=2) {
     camoflauge=camo;
      setMisson(m);
     nickname=n;
