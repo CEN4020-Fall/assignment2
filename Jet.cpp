@@ -48,7 +48,7 @@ void Jet::setEngineNum(int engineNum) {
 double Jet::mileageEstimate(double time) {
 	srand((unsigned)time(0));
 
-	double mileage = (rand() % 100) + 40; 
+	double mileage = (rand() % 100-39) + 40; 
 
 	if(fuelType == "Rocket" && myEngineNum == 2)
 		mileage = mileage + 5.5;
