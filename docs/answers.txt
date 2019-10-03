@@ -1,0 +1,69 @@
+a)
+
+Counting objects: 5, done.
+Delta compression using up to 56 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 383 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/trd16/assignment2.git
+   dcde9a6..764adcd  master -> master
+
+b)
+
+There have been 9 commits that have been done to the repository and I used
+the [git rev-list --all --count] command to get this information.
+
+c)
+
+The .gitignore file was last modified on Wednesday September 25th and I used
+the [git log .gitignore] command to get this information.
+
+d)
+
+Branches are used in a Git repository to retain the history of the original 
+line of development while also allowing mutliple people to work on a single
+code work at the same time.
+
+e)
+
+Git log is used as a running record of commits while git status displays 
+the state of the working direcotry and lets you see which changes have
+been made.
+
+f)
+
+I would use the command [git log -p Vehicle.h] to see when this specific 
+files was committed.
+
+g)
+
+I would use the command [git log --all --grep='file'] to see which commits
+have commit messages with the word "file".
+
+h)
+
+In object oriented programming, inheritance is used to allow new objects to
+take on properties of existing objects. Polymorphism is the concept of 
+objects of different types being accessed through the same interface. 
+Encapsulation is the briging together of data and methods that work 
+together in one unit like a class.
+
+i)
+
+The main difference between the dictator and lieutenants workflow 
+and the integration manager workflow is that dictator and lieutenants only
+has one central repository that everyone pulls from and the dictator pushes 
+to while integration manager has two repositories per developer and each 
+developer can push or pull.
+
+j)
+
+How would a team of 100 developers benefit from following the "dicator and 
+lieutenants" workflow instead of the "centralized" workflow?
+A team of 100 developers could benefit from using the dictator and lieutenants
+workflow instead of the centralized workflow because instead of every developer
+having to resolve conflicts before pushing only the dictator will control this
+and there will be less issues arising or differences between code.
+
+
