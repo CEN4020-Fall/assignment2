@@ -1,0 +1,22 @@
+a. To https://github.com/NoalGesler/assignment2.git
+
+b. 2; git rev-list --count HEAD
+
+c. 7 days ago; git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {}
+
+d. Allow for work to happen parallel to each other in different branches and for preparing/testing different versions of the porject.
+
+e. git log will only view committed history, while git status will allow you to inspect the full directory.
+
+f. git log --follow -- Vehicle.h
+
+g. git log --all --grep='file'
+
+h.
+	I. A child class inherits properties and variables from 	its parent		
+	II. Having multiple varieties of the same class/functions 	from overloading
+	III. Bundling together data that is often used together 	such as a class
+
+i. In Dictator and Lieutenants, pushes by developers are made to lieutenant repositories, while in Integration manager, pushes by developers are made to public repositories
+
+j. Any changes in the project and errors in the code can be overseen by the Dictator
