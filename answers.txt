@@ -20,3 +20,5 @@ h.
 i. In Dictator and Lieutenants, pushes by developers are made to lieutenant repositories, while in Integration manager, pushes by developers are made to public repositories
 
 j. Any changes in the project and errors in the code can be overseen by the Dictator
+
+5. The Driving simulator prototype is using both polymorphism and encapsulation. It is using polymorphism in that it contains multiple variations of Constructors, such as a default constructor and an explicit constructor. It is using encapsulation in that all classes are child classes of either Vehicle or PoweredVehicle, and PoweredVehicle is a child class of Vehicle.
