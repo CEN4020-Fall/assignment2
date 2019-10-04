@@ -1,4 +1,4 @@
-1) "Enumerating objects: 8, done.
+a) "Enumerating objects: 8, done.
 Counting objects: 100% (8/8), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (5/5), done.
@@ -15,3 +15,18 @@ To https://github.com/NickWattsCS/assignment2
 
 The reason that HEADD is pointing to 45c1cb8 and not master is because I had some issues with 
 pushing the new changes at first.
+
+b) using the "git log" command, I was able to see that there are currently four commits added
+to the reposirtory, all of which were made by me.
+
+c) I used the commend "git log .gitignore" to find out that the file .gitignore was last updated
+'Wed Sep 25 18:13:30 2019 -0400,' as reported by the console.
+
+d) Branches are used to create an alternative version of the parent directory, either to 
+differentiate workflow between different users, or to differntiate two functionally different
+versions of the repository.
+
+e) git log returns the commit log of a repository, or returns commit information about a given
+commit. In contrast, git status returns the current state of the git machine, and whether there
+are any changes between the remote and the local versions of the repository that have yet to been
+pushed onto the origin. 
