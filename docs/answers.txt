@@ -1,8 +1,8 @@
 e.a)	On branch master
 Your branch is up to date with 'origin/master'.
 
-e.b)	git rev-list --all --count
-8
+e.b)	git shortlog
+17
 
 e.c)	git log --follow .gitignore
 

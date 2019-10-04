@@ -1,8 +1,7 @@
 //
 //Kristen Davis
 //
-#include <cstdlib>
-#include <ctime>
+#include <random>
 #include "Skateboard.h"
 
 
@@ -23,7 +22,10 @@ void Skateboard::setWheelCount(int num) {
 }
 
 double Skateboard::mileageEstimate(double time) {
-    double mileage = (rand()%(.5-.1 +1)+.1) * time;
+    random_device rd;
+    mt19937 en(rd());
+    uniform_double_distribution<> distro(.1,.5);
+    double mileage = distro(en) * time;
     if(time>=25 && time<250)
     {
       double high= time/3;
