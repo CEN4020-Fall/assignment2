@@ -10,9 +10,9 @@
 // #include <cstdlib>
 
 Jet::Jet() {
-    setFuelType("unknown");
-	setBrand("custom"); //XOJET
-    setModel("custom");	//Bombardier
+    setFuelType("Rocket");
+	setBrand("XOJET");
+    setModel("Bombardier");
 }
 
 Jet::Jet(string brand, string model, string fuelType, int numberOfEngines){
@@ -39,13 +39,13 @@ void Jet::setNumberOfEngines(int engines) {
 double Jet::mileageEstimate(double time) {
 	// srand(time(0));
 	// int max = 100;
-	// int min = 40;	
-	
+	// int min = 40;
 	// double mileage = (min + (rand() % (max - min + 1 ))) * time;
 	
-	random_device rd;
+	random_device rd; //g++ -std=c++11
 	mt19937 gen(rd());
 	uniform_int_distribution<> dis(40, 100);
+	//https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution
 	double mileage = dis(gen) * time;
 	
     if (numberOfEngines > 2 && fuelType == "Rocket") {
