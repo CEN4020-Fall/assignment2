@@ -1,0 +1,67 @@
+a)
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 992 bytes | 82.00 KiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/aap17e/assignment2.git
+   ebf1259..80c2e60  master -> master
+
+b)
+$ git shortlog -s
+     6  Esteban Parra
+     5  aap17e
+=11 commits in total
+
+c)
+$ git log -- .gitignore
+
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+d)
+Makes sure your code changes are verified before delivering them to other developers
+-Support quality assurance/code quality/integration/testing processes
+-Better support for developers working in parallel
+
+e)
+The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes. 
+While git status lets you inspect the working directory and the staging area, git log only operates on the committed history.
+
+f)
+git log --follow -- vehicle.h
+
+
+g)
+
+git log --grep=file
+
+h)
+
+Inheritance is the mechanism of basing an object or class upon another object or class while
+retaining similar implementation.
+
+Polymorphism is a programming language's ability to process objects differently depending on 
+their data type or class. More specifically, it is the ability to redefine methods for derived classes
+
+Encapsulation describes the idea of bundling data and methods that work on that data within one unit
+
+i) Dictator and Lieutenants Workflow: ******Distributed development and integration.******8
+One central/blessed repository:Everyone makes pull from this repository. Only the dictator can push to it.
+•Dictator repository: Merges changes in the lieutenant repositories and solves any arising conflicts.
+•Lieutenant repositories: Merges changes for some (not all) developers and solves conflicts. A developer
+pushes changes to the assigned lieutenant repository.
+
+Integration Manager WorkflowFrom: Each developer makes push to his/her own public repository, 
+and pull from the blessed/central repository.
+Two repositories per developer(Public/private) 
+Integration conflict resolution are done by the integration manager.
+(Centralized integration)Each developer makes pull and push to his/her own public repository.
+
+j)
+
+A team of developers would benefit from the Dictator and Lieutenants workflow since they can all commit their
+changes to the same repository and solve any arising conflicts, the final product is clean since only the
+dictator can push to it
