@@ -9,11 +9,10 @@ Jet::Jet() {
 	setNumberOfEngines(1);
 }
 
-Jet::Jet(string brand, string model, string fuelType, string engineSize, int numberOfEngines) {
+Jet::Jet(string brand, string model, string fuelType, int numberOfEngines) {
 	setBrand(brand);
 	setModel(model);
 	setFuelType(fuelType);
-	setNumberOfEngines(numberOfEngines);
 }
 
 Jet::~Jet() = default;
