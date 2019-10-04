@@ -8,7 +8,7 @@
 #include <iostream>
 
 Skateboard::Skateboard(string brand, string model) {
-	setbrand(brand);
+	setBrand(brand);
 	setModel(model);
 }
 
