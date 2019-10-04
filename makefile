@@ -8,8 +8,8 @@ TEST = test
 
 all: Assignment2
 
-Assignment2: main.o Jet.o Car.o Bicycle.o PoweredVehicle.o Vehicle.o
-	$(CC) $(LFLAGS) main.o Jet.o Car.o Bicycle.o PoweredVehicle.o Vehicle.o -o Assignment2
+Assignment2: main.o Jet.o Car.o Bicycle.o PoweredVehicle.o Vehicle.o Skateboard.o
+	$(CC) $(LFLAGS) main.o Jet.o Car.o Bicycle.o PoweredVehicle.o Vehicle.o Skateboard.o -o Assignment2
 
 main.o: main.cpp Jet.h Car.h Bicycle.h
 	$(CC) $(CFLAGS) main.cpp -o main.o
@@ -28,6 +28,9 @@ PoweredVehicle.o: PoweredVehicle.cpp PoweredVehicle.h
 
 Vehicle.o: Vehicle.cpp Vehicle.h
 	$(CC) $(CFLAGS) Vehicle.cpp -o Vehicle.o
+
+Skateboard.o: Skateboard.cpp Skateboard.h
+	$(CC) $(CFLAGS) Skateboard.cpp -o Skateboard.o
 
 .PHONY: clean doc test
 
