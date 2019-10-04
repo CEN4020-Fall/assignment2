@@ -1,3 +1,9 @@
+//
+// Taylor Driver created on 10/4/2019
+//
+
+
+4.
 a)
 
 Counting objects: 5, done.
@@ -67,3 +73,6 @@ having to resolve conflicts before pushing only the dictator will control this
 and there will be less issues arising or differences between code.
 
 
+5.
+The Driving simulator prototype is using polymorphism and I can tell this because
+function overloading can occur and the classes all inherit from one specific class.
