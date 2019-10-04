@@ -8,8 +8,10 @@
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
+    srand((unsigned)time(0));
+
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
+    int size = 12;
     int capacity = 12;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
