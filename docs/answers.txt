@@ -1,0 +1,17 @@
+1) "Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 672 bytes | 336.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for '45c1cb8' on GitHub by visiting:
+remote:      https://github.com/NickWattsCS/assignment2/pull/new/45c1cb8
+remote:
+To https://github.com/NickWattsCS/assignment2
+ * [new branch]      HEAD -> 45c1cb8
+"
+
+The reason that HEADD is pointing to 45c1cb8 and not master is because I had some issues with 
+pushing the new changes at first.
