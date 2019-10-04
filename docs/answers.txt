@@ -91,3 +91,12 @@ Integration manager:
 	
 A group with a big amount of developers can be benefited from the dictator workflow because all the push pass by 
 one person the dictatir who have the responsability of checking the work and make sure the quality of the code.
+
+
+PART 5
+
+Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that the prototype is using any of these two OOP principles,
+ please discuss in which way the prototype is using it.
+
+In the Driving Simulator we could appreciate the use of encapsulation as I explained before, we used classes in order to use the data available only 
+for those classes and those methods that are encapsulated inside of them. and we did not override any class in order to apply polymorphism.
