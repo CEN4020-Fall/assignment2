@@ -10,7 +10,7 @@
 class Jet : public PoweredVehicle {
 
 private:
-	int myEngineNum = 1;
+	int myEngineNum;
 	string myEngineSize;
 
 public:
@@ -20,7 +20,7 @@ public:
 
 	virtual ~Jet();
 	string getEngineSize();
-	string getEngineNum();
+	int getEngineNum();
 	void setEngineSize(string engineSize);
 	void setEngineNum(int engineNum);
 	virtual double mileageEstimate(double time);
