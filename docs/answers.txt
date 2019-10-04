@@ -7,22 +7,31 @@ e.b)	git rev-list --all --count
 e.c)	git log --follow .gitignore
 
 Date:   Wed Sep 25 18:13:30 2019 -0400
-e.d)
 
-e.e)
+e.d)	1)allowing people to review changes
+	2)allow's bugs to be fixed when software is live and the fix can be implemented during the next update when the branch is merged with the master.
+
+e.e)	Git status shows the state of the working directory and what changes have been staged and not tracked. Git Log allows you to view information about previous commits that have occurred in the project.
 
 e.f)	git log -p Vehicle.h
 
 e.g)	git log --all --grep='file'
 
-e.h)
+e.h) 	Inheritance is a mechanism where you can to derive a class from a family of classes that share attributes. 
+	Polymorphism is a programming language's ability to process objects depending on data type.
+	Encapsulation is the bundling of data and functions that work on the data in one class.
 
-e.i)	Integration workflows users have public and private branches to work from.
+e.i) Integration workflows users have public and private 
+branches to work from.
 
-e.j)	It allows for only one person to push to the master instead of multiple small developers pushing to the master and causing issues.
+e.j) It allows for only one person to push to the master 
+instead of multiple small developers pushing to the master and 
+causing issues.
 
 
 
-5)
-The Driving simulator prototype uses polymorphism since it sets the brand and model of a vehicle regardless of its a powered vehicle or an unpowerd vehicle.
-The Driving simulator prototype uses encapsulation since all the different aspects of the vehicle are in the private data section.
+5) The Driving simulator prototype uses polymorphism since it 
+sets the brand and model of a vehicle regardless of its a 
+powered vehicle or an unpowerd vehicle. The Driving simulator 
+prototype uses encapsulation since all the different aspects 
+of the vehicle are in the private data section.
