@@ -30,3 +30,10 @@ e) git log returns the commit log of a repository, or returns commit information
 commit. In contrast, git status returns the current state of the git machine, and whether there
 are any changes between the remote and the local versions of the repository that have yet to been
 pushed onto the origin. 
+
+f) To see any commits involving the file Vehicle.h, just type "git log Vehicle.h".
+
+g) To get all commits that use the word "file," include the flag "--grep='file'" to make the 
+command line read "git log --grep='file'"
+
+
