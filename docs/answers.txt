@@ -1,0 +1,83 @@
+//
+// Conner Flynn (cjf16e) 10/4/18
+//
+
+(a)
+$ git push --all
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.71 KiB | 180.00 KiB/s, done.
+Total 17 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+To https://github.com/cflynn0/assignment2.git
+   347fce8..4536ee9  development -> development
+
+(b)
+18 commits 
+(It should be 9, but my original answers.txt was left on another machine I could not access before the deadline)
+"git rev-list --all --count"
+"git shortlog" breaks down commits by user
+
+(c)
+ll -a
+	...
+-rw-r--r-- 1 CF 197121   45 Oct  3 09:56 .gitignore
+
+(d)
+Branches are used in Git repositories to enable the development of multiple projects using the same source code at the same time.
+Branches also preserve the state of the primary branch and external changes do not affect development branches unless those changes
+are pulled by the user. 
+
+(e)
+While git log displays a history of commits made including author, date, and commit message, git status inspects the current directory
+and lists the current branch, whether it's up to date, and which files are staged, unstaged, and untracked.
+
+(f)
+git log --follow -- Vehicle.h
+
+(g)
+git log --all --grep='file'
+
+(h)
+	(I)
+	Inheritance is a mechanism by which objects "inherit" certain properties from another object, for example a child class might inherit
+	certain properties such as functions or variables from a parent class. 
+	
+	(II)
+	Polymorphism is the ability of a single function or class to process objects based on their data type, for example overloading a
+	single function allows it to be used by objects of various data types. 
+	
+	(III)
+	Encapsulation is hiding or restricting the use of data, functions, or other elements from external use. Examples would be private or 
+	protected data in class definitions. 
+
+(i)
+While both the “Dictator and Lieutenants” and the “Integration Manager” workflows separate degrees of development with a manager/dictator 
+reviewing all the changes made by individual developers on individual branches, the difference lies in the public and private repositories
+the developers use in the "Integration Manager” workflow. This allows developers to privately develop, then push to their public repository
+to be reviewed by the integration manager as opposed to sending their code to "lieutenants" to be reviewed. 
+
+(j)
+A team of 100 developers would benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow because 
+using the Centralized workflow requires that each developer pull any changes in the central repository AND resolve conflicts before pushing 
+their work to the central repository. If 100 people are making changes at the same time, it would be nearly impossible for separate developers
+resolve all of these changes. The Dictator and lieutenants workflow allows for organized, chain-of-command development wherein all changes are 
+reviewed at each level of command before they are resolved and merged by the dictator. 
+
+(OOP Principles)
+The Driving simulator prototype is using both polymorphism and encapsulation. Polymorphism is occurring because there is a hierarchy of classes
+where each class IS a type of the parent class, i.e. a Car is a type of Powered Vehicle and a Skateboard is a type of Vehicle. The "virtual" function
+allows for this prototype to use polymorphism. Encapsulation is occurring because some of the classes have private member data which cannot be 
+accessed outside the class itself. The Car class's private variable myEngineSize and the Bicycle class's private variable myGearCount are examples
+of hidden/restricted data. 
+
+
+Citations:
+https://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message
+https://www.atlassian.com/git/tutorials/inspecting-a-repository
+https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/
+https://beginnersbook.com/2017/09/cpp-encapsulation/
+https://www.tutorialspoint.com/cplusplus/cpp_polymorphism.htm
+
