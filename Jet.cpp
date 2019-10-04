@@ -7,6 +7,10 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <random>
 
 Jet::Jet() {
 	myEngineSize = "unknown";
@@ -30,7 +34,7 @@ string Jet::getEngineSize() {
 	return myEngineSize;
 }
 
-string Jet::getEngineNum() {
+int Jet::getEngineNum() {
 	return myEngineNum;
 }
 
@@ -49,9 +53,14 @@ void Jet::setEngineNum(int engineNum) {
 }
 
 double Jet::mileageEstimate(double time) {
-	srand((unsigned)time(0));
-
-	double mileage = (rand() % 100-39) + 40; 
+	//srand(time(NULL));
+	//double mileage = (rand() % 100-39) + 40; 
+	//used Cubbi's answer on StackOverflow's "Random Number c++ in some range"	
+	std::random_device rd;
+	std::mt19937 rng(rd());
+	std::uniform_int_distribution<int> uni(40,100);
+	int randnum = uni(rng);
+	double mileage = randnum * time;
 
 	if(fuelType == "Rocket" && myEngineNum == 2)
 		mileage = mileage + 5.5;
