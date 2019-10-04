@@ -15,11 +15,12 @@ private:
 public:
 	Jet();
 	
-	explicit Jet(string brand, string model, string fuelType, int numberOfEngines = 1);
+	explicit Jet(string brand, string model, string fuelType, 
+				 int numberOfEngines = 1);
 	
 	virtual ~Jet();
 	int getNumberOfEngines();
-	void setNumberOfEngines(int numberOfEngines); 
+	void setNumberOfEngines(int engines); 
     virtual double mileageEstimate(double time);
     virtual string toString();
 };
