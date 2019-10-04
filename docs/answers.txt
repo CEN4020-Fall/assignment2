@@ -1,0 +1,38 @@
+(a) 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+(b) 
+4 commits so far
+command = git log
+(c) 
+Wed Sep 25 18:13:30 2019
+command = git log .gitignore
+(d) 
+(e) 
+git log: shows the history of commits pushed to branch
+git status: shows the files ready to be committed 
+(f) 
+git log Vehicle.h
+(g) 
+(h) 
+(I)
+Subclasses inherit the features of a superclass
+(II)
+Operator overloading, method overloading
+the ability to redefine methods for derived classes
+(III)
+used to hide the internal representation, or state, of an object from the outside.
+
+(i) 
+Dictator and Lieutenants - Everyone makes pull from this repository. Only the dictator can push to it. 
+Integration Manager - Each developer makes pull and push to his/her own public repository.
+(j)
+There would be way less merge conflicts with dictator and lieutenants workflow which otherwise would cause many headaches.
