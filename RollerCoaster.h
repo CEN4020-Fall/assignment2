@@ -11,7 +11,9 @@ class RollerCoaster : public PoweredVehicle {
 
 private:
 	string myEngineSize;
-
+	string myManufacturer;
+	string myName;
+	string myModel;
 public:
 	RollerCoaster();
 
@@ -19,7 +21,13 @@ public:
 
 	virtual ~RollerCoaster();
 	string getEngineSize();
+	string getManufacturer();
+	string getName();
+	string getModel();
+	void setManufacturer(string manufacturer);
 	void setEngineSize(string engineSize);
+	void setName(string name);
+	void setModel(string model);
 	virtual double mileageEstimate(double time);
 	virtual string toString();
 };
