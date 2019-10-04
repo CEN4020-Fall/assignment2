@@ -36,4 +36,12 @@ f) To see any commits involving the file Vehicle.h, just type "git log Vehicle.h
 g) To get all commits that use the word "file," include the flag "--grep='file'" to make the 
 command line read "git log --grep='file'"
 
-
+h) 
+I) Inheritance is the object-oriented concept where one class is derived from another class, 
+meaning that the derived class has access to functions from the parent class as well as its own 
+distinct functions.
+II) Polymorphism is a concept of inheritance that says that an object of a derived child class is 
+also an object of the parent class.
+III) Encapsulation is a concept of object-oriented programming where functions and data that 
+should not be accessible is made private from users. This is to avoid any undesirable 
+manipulation of sensitive data.
