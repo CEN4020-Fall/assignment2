@@ -30,7 +30,7 @@ void Monorail::setNumberCyl(int newNum)
 
 double Monorail::mileageEstimate(double time)
 {
-	srand(time(0));
+	srand(time(NULL));
 	double mileage = rand()%20 + 35;
 	if(model == "aboveGround")
 		mileage += mileage * 0.002 * numberCylinder;
@@ -40,5 +40,5 @@ double Monorail::mileageEstimate(double time)
 string Monorail::toString()
 {
 	return "-> Monorail\n" + PoweredVehicle::toString() + "\n\tNumber of Cylinders: " +
-		getNumberCyl();
+		to_string(getNumberCyl());
 }
