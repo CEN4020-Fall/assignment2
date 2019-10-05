@@ -11,8 +11,8 @@ void printVehiclesRoster(Vehicle **vehicles, int size);
 int main() {
     srand(time(NULL));
     std::cout << "Driving simulator" << std::endl;
-    int size = 9;
-    int capacity = 10;
+    int size = 12;
+    int capacity = 12;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     vehiclesArray[0] = new Car();
@@ -21,9 +21,12 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
-    vehiclesArray[6] = new Sleigh("IKEA", "Slädtur", "chocolate", 4);
-    vehiclesArray[7] = new Sleigh("Apple", "iSleigh", "carrots", 6);
-    vehiclesArray[8] = new Sleigh("Ferrari", "F1 SLGH19", "carrots", 8);
+    vehiclesArray[6] = new Jet("Cessna", "CJ4", "Avgas", 2);
+    vehiclesArray[7] = new Jet("Cessna", "CJ5", "Rocket", 4);
+    vehiclesArray[8] = new Skateboard("Enjoi", "Whitey Panda");
+    vehiclesArray[9] = new Sleigh("IKEA", "Slädtur", "chocolate", 4);
+    vehiclesArray[10] = new Sleigh("Apple", "iSleigh", "carrots", 6);
+    vehiclesArray[11] = new Sleigh("Ferrari", "F1 SLGH19", "carrots", 8);
 
     printVehiclesRoster(vehiclesArray, size);
 
