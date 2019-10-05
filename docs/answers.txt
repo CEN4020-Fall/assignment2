@@ -1,0 +1,74 @@
+a) "Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 672 bytes | 336.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for '45c1cb8' on GitHub by visiting:
+remote:      https://github.com/NickWattsCS/assignment2/pull/new/45c1cb8
+remote:
+To https://github.com/NickWattsCS/assignment2
+ * [new branch]      HEAD -> 45c1cb8
+"
+
+The reason that HEADD is pointing to 45c1cb8 and not master is because I had some issues with 
+pushing the new changes at first.
+
+b) using the "git log" command, I was able to see that there are currently four commits added
+to the reposirtory, all of which were made by me.
+
+c) I used the commend "git log .gitignore" to find out that the file .gitignore was last updated
+'Wed Sep 25 18:13:30 2019 -0400,' as reported by the console.
+
+d) Branches are used to create an alternative version of the parent directory, either to 
+differentiate workflow between different users, or to differntiate two functionally different
+versions of the repository.
+
+e) git log returns the commit log of a repository, or returns commit information about a given
+commit. In contrast, git status returns the current state of the git machine, and whether there
+are any changes between the remote and the local versions of the repository that have yet to been
+pushed onto the origin. 
+
+f) To see any commits involving the file Vehicle.h, just type "git log Vehicle.h".
+
+g) To get all commits that use the word "file," include the flag "--grep='file'" to make the 
+command line read "git log --grep='file'"
+
+h) 
+I) Inheritance is the object-oriented concept where one class is derived from another class, 
+meaning that the derived class has access to functions from the parent class as well as its own 
+distinct functions.
+II) Polymorphism is a concept of inheritance that says that an object of a derived child class is 
+also an object of the parent class.
+III) Encapsulation is a concept of object-oriented programming where functions and data that 
+should not be accessible is made private from users. This is to avoid any undesirable 
+manipulation of sensitive data.
+
+i) The main difference between the two workflow models is the level of control that the 
+developers have to push to the blessed repository. In both models, developers can pull from the 
+blessed repository. However, this is where the two processes diverge.
+
+Integration management allows developers to push to their own public repositories. From that 
+point, an integration manager finds and resolves any conflicts between the different 
+repositories, and publishes the final repository to the blessed repository. In this version, the 
+developers have more direct control over what appears in the blessed repository.
+
+In the Dictators and Lieutenants workflow, devlopers must push their repositories to designated 
+"lieutenant" repositories. From there, a separate entity, the "dictator", merges the two 
+repositories and resolves any conflicts. This is called the dictator repository, which is then 
+pushed onto the blessed repository. This allows for more regulatory control over the developers' 
+individual contributions.
+
+j) A team of 100 developers would benefit from Dictator and Lieutenant workforce because it 
+allows the project manager to oversee version control before the work done by those developers is 
+pushed to the final repository. This allows the project manager to resolve the 
+torrent of issues that would certainly arise from 100 different versions of one project being 
+coallesced into one product. This can also give the project manager a level of oversight by 
+allowing him to insert or remove any code that they may want before pushing it to the blessed 
+repository.
+
+
+FINAL: Polymorphism is used in the simulator to create the heterogenious list in main.cpp, and 
+encapsulation is used to store, access, and manipulate member data

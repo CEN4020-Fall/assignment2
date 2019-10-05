@@ -1,13 +1,16 @@
 #include <iostream>
 #include "Car.h"
 #include "Bicycle.h"
+#include "Jet.h"
+#include "Skateboard.h"
+#include "Monorail.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
-    int capacity = 10;
+    int size = 10;
+    int capacity = 15;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     vehiclesArray[0] = new Car();
@@ -17,6 +20,11 @@ int main() {
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
 
+    //These are my own test cases
+    vehiclesArray[6] = new Monorail();
+    vehiclesArray[7] = new Monorail("Wunder", "aboveGround", 15);
+    vehiclesArray[8] = new Skateboard("Tony Hawk", "Shredder");
+    vehiclesArray[9] = new Jet("Boeing", "F50", "Rocket", 6);
     printVehiclesRoster(vehiclesArray, size);
 
     if (vehiclesArray != 0) { // If it is not a null pointer

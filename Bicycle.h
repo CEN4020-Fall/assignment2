@@ -2,6 +2,8 @@
 // Created by Esteban Parra on 9/5/19.
 //
 
+//Edits made by Nicholas Watts where noted
+
 #ifndef DRIVINGSIMULATOR_BICYCLE_H
 #define DRIVINGSIMULATOR_BICYCLE_H
 
