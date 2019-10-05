@@ -11,9 +11,6 @@ Jet::Jet(string brand, string model, string fuelType, int numEngines) {
     setNumberOfEngines(numEngines);
 }
 
-//deconstructor
-Jet::~Jet() = default;
-
 //set function
 void Jet::setNumberOfEngines(int numEngines) {
     numberOfEngines = numEngines;
@@ -22,6 +19,15 @@ void Jet::setNumberOfEngines(int numEngines) {
 //get function
 int Jet::getNumberOfEngines() {
     return numberOfEngines;
+}
+//deconstructor
+Jet::~Jet() = default;
+
+//needed help implementing this
+//Jet message
+string Jet::toString() {
+    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of engines: " +
+           to_string( getNumberOfEngines() );
 }
 
 //needed help implementing this
@@ -34,10 +40,4 @@ double Jet::mileageEstimate(double time) {
       mileage += mileage * ( 5.5 * getNumberOfEngines() );
     }
     return mileage;
-}
-//needed help implementing this
-//Jet message
-string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of engines: " +
-           to_string( getNumberOfEngines() );
 }
