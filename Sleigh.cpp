@@ -23,11 +23,11 @@ void Sleigh::setReindeerCount(int numReindeer) {
 
 double Sleigh::mileageEstimate(double time) {
     double mileage = 1000 * time;
-    if (fuelType != "carrots" && numReindeer < 8) {
-        mileage -= (mileage * 0.30) * (8 - numReindeer);  //30% decrease in speed per missing
+    if (fuelType != "carrots" && numberOfReindeer < 8) {
+        mileage -= (mileage * 0.30) * (8 - numberOfReindeer);  //30% decrease in speed per missing
     }                                                     //reindeer if not eating carrots
-    else if (fuelType == "carrots" && numReindeer < 8) {
-        mileage -= (mileage * 0.15) * (8 - numReindeer);  //15% decrease in speed per missing
+    else if (fuelType == "carrots" && numberOfReindeer < 8) {
+        mileage -= (mileage * 0.15) * (8 - numberOfReindeer);  //15% decrease in speed per missing
     }                                                     //reindeer if eating carrots
     return mileage;
 }

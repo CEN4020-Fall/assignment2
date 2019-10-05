@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
@@ -8,6 +9,7 @@
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
+    srand(time(NULL));
     std::cout << "Driving simulator" << std::endl;
     int size = 9;
     int capacity = 10;

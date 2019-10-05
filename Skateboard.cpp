@@ -14,10 +14,17 @@ Skateboard::Skateboard(string brand, string model) {
 
 Skateboard::~Skateboard() = default;
 
+float Skateboard::RandomFloat(float a, float b) {
+    float random = ((float) rand()) / (float) RAND_MAX;
+    float diff = b - a;
+    float r = random * diff;
+    return a + r;
+}
+
 double Skateboard::mileageEstimate(double time) {
-    double mileage = floor((rand() % .5) + .1);
+    double mileage = floor(RandomFloat(0.1, 0.5));
     if(time > 25 && time < 250) {
-        mileage += (rand() % (time / 3)) + 1;
+        mileage += floor((RandomFloat(1, time / 3)));
     }
     return mileage;
 }
