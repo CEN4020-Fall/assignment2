@@ -9,19 +9,19 @@
 
 class Jet : public PoweredVehicle {
 
-private:
-    int numberOfEngines;
-
 public:
     explicit Jet(string brand, string model, int numberOfEngines = 1);
 
     virtual ~Jet();
     int getEngineCount();
     void setEngineCount(int gearCount);
-    virtual ~Jet();
-    virtual double mileageEstimate(double time);
+   int getEngineCount();
 
     virtual string toString();
+     virtual ~Jet();
+    virtual double mileageEstimate(double time);
+private:
+    int numberOfEngines;
 };
 
 
