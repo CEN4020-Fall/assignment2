@@ -1,5 +1,5 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by Jason Santos on 10/4/19.
 //
 
 #include "Helicopter.h"
@@ -28,6 +28,11 @@ string Helicopter::getLiftType(){
 	return (this->liftType);
 }
 
+
+/*  Calculates the estimated mileage of a helicopter.
+*   Helicopters with a light liftType go faster 
+*   so they get an extra .07 percent of miles
+*/
 double Helicopter::mileageEstimate(double time) {    
 	std::srand(std::time(NULL)); 
     int rand = std::rand() %(70 - 10 + 1) + 10; 

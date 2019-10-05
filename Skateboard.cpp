@@ -18,9 +18,14 @@ Skateboard::Skateboard(string brand, string model) {
 Skateboard::~Skateboard() = default;
 
 
+/*  This function gets the estimated mileage of a 
+*   skateboardbased on a random number between .5 
+*   and .1 multiplied by the number of minutes it    
+*   traveled for.
+*/
 double Skateboard::mileageEstimate(double time) {
     std::srand(std::time(NULL)); 
-    double rand = (std::rand() % (500 - 100 + 1) + 100) / 1000.0 ; 
+    double rand = (std::rand() % (500 - 100 + 1) + 100) / 1000.0 ; //Calculates random number beteen .5 and .1
     double mileage = rand * time;
     double addedMileage = 0;
     if(time > 25 && time < 250){

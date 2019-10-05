@@ -1,5 +1,5 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by Jason Santos on 10/4/19.
 //
 
 #include "Jet.h"
@@ -30,6 +30,11 @@ int Jet::getNumberOfEngines(){
 	return (this->numberOfEngines);
 }
 
+
+/*  If a jet has more than one engine and rocket fuel,
+*   the mileage is increased by .055 for every engine
+*   it has. 
+*/
 double Jet::mileageEstimate(double time) {    
 	std::srand(std::time(NULL)); 
     int rand = std::rand() %(100 - 40 + 1) + 40; 
@@ -40,6 +45,8 @@ double Jet::mileageEstimate(double time) {
     return mileage;
 }
 
+//getNumberOfEngines returns an int so it must be converted 
+//with to_string
 string Jet::toString() {
     return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of engines: " +
            to_string(getNumberOfEngines());
