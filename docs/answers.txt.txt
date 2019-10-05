@@ -50,8 +50,8 @@ Encapsulation describes the idea of bundling data and methods that work on that 
 
 i) Dictator and Lieutenants Workflow: ******Distributed development and integration.******8
 One central/blessed repository:Everyone makes pull from this repository. Only the dictator can push to it.
-•Dictator repository: Merges changes in the lieutenant repositories and solves any arising conflicts.
-•Lieutenant repositories: Merges changes for some (not all) developers and solves conflicts. A developer
+â€¢Dictator repository: Merges changes in the lieutenant repositories and solves any arising conflicts.
+â€¢Lieutenant repositories: Merges changes for some (not all) developers and solves conflicts. A developer
 pushes changes to the assigned lieutenant repository.
 
 Integration Manager WorkflowFrom: Each developer makes push to his/her own public repository, 
@@ -65,3 +65,8 @@ j)
 A team of developers would benefit from the Dictator and Lieutenants workflow since they can all commit their
 changes to the same repository and solve any arising conflicts, the final product is clean since only the
 dictator can push to it
+
+Object Oriented Question)
+
+It uses both encapsulation and polymorphism.
+The simulater is using encapsulation by having classes that encompass functions and by separating the member data and functions into different levels of protection. On the other hand, virtual functions are being used in the vehicle and powered vehicle classes so it has polymorphism. the common function name serves the purpose of polymorphism
