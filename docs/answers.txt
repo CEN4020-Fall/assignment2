@@ -60,3 +60,11 @@ In the Dictators and Lieutenants workflow, devlopers must push their repositorie
 repositories and resolves any conflicts. This is called the dictator repository, which is then 
 pushed onto the blessed repository. This allows for more regulatory control over the developers' 
 individual contributions.
+
+j) A team of 100 developers would benefit from Dictator and Lieutenant workforce because it 
+allows the project manager to oversee version control before the work done by those developers is 
+pushed to the final repository. This allows the project manager to resolve the 
+torrent of issues that would certainly arise from 100 different versions of one project being 
+coallesced into one product. This can also give the project manager a level of oversight by 
+allowing him to insert or remove any code that they may want before pushing it to the blessed 
+repository.
