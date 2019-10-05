@@ -1,18 +1,21 @@
+//
+// Created by Andres Paz
+//
 #include "Veoride.h"
 
 Veoride::~Veoride() = default;
 
 //default construtor
 Veoride::Veoride() {
-    setPrice("Cheapy");
-    setSpeed("30mph");
+    setBrand("Cheapy");
+    setModel("30mph");
     setFuelType("manpower/electric");
 }
 
 //default constructor
-Veoride::Veoride(string price, string speed, string fuelType) {
-    setPrice(price);
-    setSpeed(speed);
+Veoride::Veoride(string brand, string model, string fuelType) {
+    setBrand(brand);
+    setModel(model);
     setFuelType(fuelType);
 }
 
