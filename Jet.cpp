@@ -36,7 +36,7 @@ void Jet::setNumberEngines(int newNum)
 
 //NW This function has been changed to match the specifications as given in the 
 //.pdf provided for the assignment.
-double Jet::mileageEstimate(double time)
+double Jet::mileageEstimate(double p_time)
 {
 	srand(time(NULL));
 	double mileage = rand() % 60 + 40.0;

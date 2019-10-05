@@ -28,7 +28,7 @@ void Monorail::setNumberCyl(int newNum)
 		numberCylinder = newNum;
 }
 
-double Monorail::mileageEstimate(double time)
+double Monorail::mileageEstimate(double p_time)
 {
 	srand(time(NULL));
 	double mileage = rand()%20 + 35;

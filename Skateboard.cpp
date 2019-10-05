@@ -16,15 +16,15 @@ Skateboard::~Skateboard() = default;
 //in the assignment pdf. The mileage is somewhere between 0.1 and 0.5 miles
 //per minute, and an additional amount of minutes if the time is between 
 //25 and 250 minutes.
-double Skateboard::mileageEstimate(double time)
+double Skateboard::mileageEstimate(double p_time)
 {
-	srand(time(0));
+	srand(time(NULL));
 	int addition = 0;
 	double mileage = rand()%5 + 1.0;
-	mileage *= 0.1 * time;
+	mileage *= 0.1 * p_time;
 	if (time > 25 && time < 250)
 	{
-		addition = rand()%(time/3);
+		addition = rand()%((int) p_time / 3);
 		addition += 1;
 		mileage += addition;
 	}
