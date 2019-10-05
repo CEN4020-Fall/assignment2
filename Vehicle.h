@@ -7,7 +7,7 @@
 
 #include <string>     // std::string, std::stoi
 #include <cstdlib>	//NW Added here to make random number generators in all children objects.
-#include <time>		//NW Same here.
+#include <ctime>	//NW Same here
 using namespace std;
 
 class Vehicle {
