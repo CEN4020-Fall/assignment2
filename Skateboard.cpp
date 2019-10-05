@@ -22,7 +22,7 @@ double Skateboard::mileageEstimate(double p_time)
 	int addition = 0;
 	double mileage = rand()%5 + 1.0;
 	mileage *= 0.1 * p_time;
-	if (time > 25 && time < 250)
+	if (p_time > 25 && p_time < 250)
 	{
 		addition = rand()%((int) p_time / 3);
 		addition += 1;
