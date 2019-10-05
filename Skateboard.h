@@ -1,3 +1,6 @@
+//
+// Created by Andres Paz
+//
 #ifndef DRIVINGSIMULATOR_SKATEBOARD_H
 #define DRIVINGSIMULATOR_SKATEBOARD_H
 
