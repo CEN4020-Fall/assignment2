@@ -6,7 +6,7 @@
 #define DRIVINGSIMULATOR_VEHICLE_H
 
 #include <string>     // std::string, std::stoi
-
+#include <cstdlib>	//NW added here to make random number generators in all children objects
 using namespace std;
 
 class Vehicle {
