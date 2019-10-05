@@ -29,8 +29,8 @@ this information (4 points)
 
 (e) What is the difference between git log and git status? (4 points)
 	git log shows the committed project history
-	
-	git status displays the state of the working directory 
+
+	git status displays the state of the working directory
 	and how the repository is currently structured
 
 (f) What command would you use to see the commits where “Vehicle.h” was one of the
@@ -61,5 +61,13 @@ Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
 	None of the developers have to solve any arising conflicts. This task is
 	performed by the lieutenants for a group of developers, and then the dictator
 	resolves conflicts that arise from the lieutenants' merges. This results in
-	the benefit of more time developing for the developers and less time solving 
+	the benefit of more time developing for the developers and less time solving
 	conflicts.
+
+(5) Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that
+the prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+	This project is using both polymorphism and encapsulation. It is using polymorphism
+	when we have a car, bicycle, jet, skateboard, and sleigh which are different objects
+	but are all also a Vehicle object. It is using encapsulation when using getter and setter
+	functions to hide class attributes, making manipulation of the class itself much easier.
