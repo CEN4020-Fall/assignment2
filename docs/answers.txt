@@ -1,0 +1,73 @@
+(a) Paste the console output you saved at the end of step 3.C (2 points)
+	On branch master
+	Your branch is ahead of 'origin/master' by 1 commit.
+  	(use "git push" to publish your local commits)
+
+	Untracked files:
+  	(use "git add <file>..." to include in what will be committed)
+	docs/
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information (4 points)
+	9
+	git rev-list --all --count
+
+(c) When was the .gitignore file modified last? Write the git command you used to get
+this information (4 points)
+	Author: Esteban Parra <estebanpr014@gmail.com>
+	Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    	    -> Tracking .gitignore
+
+	git log -1 ./.gitignore
+
+(d) Mention two reasons why branches are used in a Git repository (4 points)
+	-Branches are used to separate work to specific features in a project
+	-Allow quick switching between contexts quickly
+
+(e) What is the difference between git log and git status? (4 points)
+	git log shows the committed project history
+
+	git status displays the state of the working directory
+	and how the repository is currently structured
+
+(f) What command would you use to see the commits where “Vehicle.h” was one of the
+committed files? (4 points)
+	git log Vehicle.h
+
+(g) What command would you use to see the commits whose commit message contains the
+word “file”? (4 points)
+	git log --grep file
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is
+polymorphism? (III) What is encapsulation? (6 points)
+	(I) Inheritance is the relationship objects have with each other where attributes
+		and behaviors can be shared in a parent-child way.
+	(II) I think of polymorphism as many representations. This means that an object can be
+		correctly represented by other objects.
+	(III) Encapsulation is hiding the details of an object. This is useful to the user
+		of a class because they are only given the information relevant to how they
+		can use the class. Hiding the unnecessary complexities from the user.
+
+(i) What is the main difference between the “Dictator and Lieutenants” workflow and the
+“Integration manager” workflow? (5 points)
+	The first uses a dictator to push to the central repository while the second
+	uses an integration manager to push to the central repository.
+
+(j) How would a team of 100 developers benefit from following the “Dictator and
+Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+	None of the developers have to solve any arising conflicts. This task is
+	performed by the lieutenants for a group of developers, and then the dictator
+	resolves conflicts that arise from the lieutenants' merges. This results in
+	the benefit of more time developing for the developers and less time solving
+	conflicts.
+
+(5) Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that
+the prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+	This project is using both polymorphism and encapsulation. It is using polymorphism
+	when we have a car, bicycle, jet, skateboard, and sleigh which are different objects
+	but are all also a Vehicle object. It is using encapsulation when using getter and setter
+	functions to hide class attributes, making manipulation of the class itself much easier.
