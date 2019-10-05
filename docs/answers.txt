@@ -1,0 +1,102 @@
+//Answers.txt
+
+(a) Paste the console output you saved at the end of step 3.C (2 points)
+
+(base) wc-dhcp201d240:assignment2 emiliofaim$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+
+(b) How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+(base) wc-dhcp201d240:docs emiliofaim$ git rev-list --all --count
+9
+
+
+
+(c) When was the .gitignore file modified last? Write the git command you used to get this information (4 points)
+
+Last time modified was september 25 by Esteban Parra, and the command I used to find out was:
+"git log .gitignore"
+
+Sample output:
+
+(base) wc-dhcp201d240:assignment2 emiliofaim$ git log .gitignore
+commit e424a923e80da4772ca789591ef3326230062a71
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    -> Tracking .gitignore
+
+
+
+(d) Mention two reasons why branches are used in a Git repository (4 points)
+
+1. Branches are used to organize and make the workflow more efficient and effortless
+
+2. it will let teams work in parallel and at the same time
+
+
+
+(e) What is the difference between git log and git status? (4 points)
+
+The gig log command as it is stated on its documentation shows the commit logs of the file. 
+
+The git status command is described also in its documentation, it will show the status of the working three, 
+not only the file .
+
+
+
+(f) What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+git log --follow Vehicle.h
+
+
+
+(g) What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+git grep file
+
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+
+
+I) Inheritance: It is a mechanism where you can to derive a class from another class that share a set 
+of attributes and methods
+
+II) Polymorphism: When you override the method inherited from the supper class and then you modify it depending 
+on the needs
+
+III) Encapsulation: the idea of bundling data and methods in order to be used inside of that unit. for example: classes
+
+Read the “Git Commands, workflow, and resources.pdf” file on Canvas and answer the following questions:
+(i) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+
+Dictator and Lieutenants:
+		Distributed development and integration.
+		central repository
+		merges changes in the lieutenants repos and solve the problems
+		Lieutenants repos: merge some changes and solves errors
+ 
+Integration manager:
+		each developer makes their own push and all o the pull from the same repository
+		integration conflict resolution are done by the integration manager
+		Each developer makes pull and push to his/her own public repository
+
+
+(j) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+	
+A group with a big amount of developers can be benefited from the dictator workflow because all the push pass by 
+one person the dictatir who have the responsability of checking the work and make sure the quality of the code.
+
+
+PART 5
+
+Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that the prototype is using any of these two OOP principles,
+ please discuss in which way the prototype is using it.
+
+In the Driving Simulator we could appreciate the use of encapsulation as I explained before, we used classes in order to use the data available only 
+for those classes and those methods that are encapsulated inside of them. and we did not override any class in order to apply polymorphism.

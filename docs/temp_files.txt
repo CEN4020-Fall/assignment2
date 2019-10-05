@@ -1,0 +1,16 @@
+//temporary output
+//first status check
+(base) wc-dhcp201d240:assignment2 emiliofaim$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs/
+//second status check
+(base) wc-dhcp201d240:assignment2 emiliofaim$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
