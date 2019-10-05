@@ -13,7 +13,7 @@ class Monorail: public PoweredVehicle
 
 	public:
 		Monorail();
-		explicit Monorail(string brand, string model, string fuelType = "diesal",
+		explicit Monorail(string brand, string model, string fuelType,
 			int numCyl = 6);
 		int getNumberCyl();
 		void setNumberCyl(int newNum);

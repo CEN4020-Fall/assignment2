@@ -17,6 +17,8 @@ Monorail::Monorail(string brand, string model, string fuelType, int numCyl)
 	setNumberCyl(numCyl);
 }
 
+Monorail::~Monorail() = default;
+
 int Monorail::getNumberCyl()
 {
 	return numberCylinder;
