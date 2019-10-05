@@ -2,7 +2,6 @@
 // Created by Keith Van Dyke on 10/04/19
 //
 
-#include <cstdlib>      //for random number generation
 #include "Sleigh.h"
 
 Sleigh::Sleigh(string brand, string model, string fuelType, int numReindeer) {
