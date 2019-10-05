@@ -29,9 +29,6 @@ double Sleigh::mileageEstimate(double time) {
     else if (fuelType == "carrots" && numberOfReindeer < 8) {
         mileage -= (mileage * 0.15) * (8 - numberOfReindeer);  //15% decrease in speed per missing
     }                                                     //reindeer if eating carrots
-    if (mileage < 0) {
-        return 0;
-    }
     return mileage;
 }
 
