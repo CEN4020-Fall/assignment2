@@ -13,13 +13,9 @@ class Bicycle : public Vehicle {
 
 private:
     int myGearCount;
-    int numberOfGears;	//NW added member data
-    int mileage;
 
 public:
-    explicit Bicycle(string brand, string model, int gearCount = 1, 
-			int numberOfGears = 3, int mileage = 3);	
-//NW added default parameter
+    explicit Bicycle(string brand, string model, int gearCount = 1);
 
     virtual ~Bicycle();
     int getGearCount();
