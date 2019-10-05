@@ -14,8 +14,8 @@ Skateboard::Skateboard(string brand, string model) {
 
 Skateboard::~Skateboard() = default;
 
-float Skateboard::RandomFloat(float a, float b) {
-    float random = ((float) rand()) / (float) RAND_MAX;
+float Skateboard::RandomFloat(float a, float b) {               //float function from https://stackoverflow.com/questions/5289613/generate-random-float-between-two-floats/5289624
+    float random = ((float) rand()) / (float) RAND_MAX;         //other rand() implementations in project done without help
     float diff = b - a;
     float r = random * diff;
     return a + r;
