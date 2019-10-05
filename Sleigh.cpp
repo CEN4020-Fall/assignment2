@@ -5,7 +5,7 @@
 #include <cstdlib>      //for random number generation
 #include "Sleigh.h"
 
-Sleigh::Sleigh(string brand, string model, int numReindeer, string fuelType) {
+Sleigh::Sleigh(string brand, string model, string fuelType, int numReindeer) {
     setBrand(brand);
     setModel(model);
     setReindeerCount(numReindeer);

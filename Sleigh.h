@@ -13,7 +13,7 @@ private:
     int numberOfReindeer;
 
 public:
-    explicit Sleigh(string brand, string model, int numReindeer = 8);
+    explicit Sleigh(string brand, string model, string fuelType, int numReindeer = 8);
 
     virtual ~Sleigh();
     int getReindeerCount();
