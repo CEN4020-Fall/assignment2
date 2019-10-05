@@ -21,8 +21,8 @@ int main() {
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
 
     //These are my own test cases
-    vehiclesArray[6] = new Jet();
-    vehiclesArray[7] = new Monorail("Wunder", "aboveGround", "diesal", 15);
+    vehiclesArray[6] = new Monorail();
+    vehiclesArray[7] = new Monorail("Wunder", "aboveGround", 15);
     vehiclesArray[8] = new Skateboard("Tony Hawk", "Shredder");
     vehiclesArray[9] = new Jet("Boeing", "F50", "Rocket", 6);
     printVehiclesRoster(vehiclesArray, size);

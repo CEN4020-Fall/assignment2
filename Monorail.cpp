@@ -9,11 +9,10 @@ Monorail::Monorail()
 	setModel("Unknown");
 }
 
-Monorail::Monorail(string brand, string model, string fuelType, int numCyl)
+Monorail::Monorail(string brand, string model, int numCyl)
 {
 	setBrand(brand);
 	setModel(model);
-	setFuelType(fuelType);
 	setNumberCyl(numCyl);
 }
 
@@ -21,21 +20,21 @@ Monorail::~Monorail() = default;
 
 int Monorail::getNumberCyl()
 {
-	return numberCylinder;
+	return numberCylinders;
 }
 
 void Monorail::setNumberCyl(int newNum)
 {
 	if (newNum > 0)
-		numberCylinder = newNum;
+		numberCylinders = newNum;
 }
 
 double Monorail::mileageEstimate(double p_time)
 {
 	srand(time(NULL));
 	double mileage = rand()%20 + 35;
-	if(model == "aboveGround")
-		mileage += mileage * 0.002 * numberCylinder;
+	if(getModel() == "aboveGround")
+		mileage += mileage * 0.002 * numberCylinders;
 	return mileage;
 }
 

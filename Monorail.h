@@ -13,8 +13,8 @@ class Monorail: public PoweredVehicle
 
 	public:
 		Monorail();
-		explicit Monorail(string brand, string model, string fuelType,
-			int numCyl = 6);
+		explicit Monorail(string brand, string model, int numCyl = 6);
+		~Monorail();
 		int getNumberCyl();
 		void setNumberCyl(int newNum);
 		virtual double mileageEstimate(double time);
