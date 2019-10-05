@@ -5,7 +5,7 @@
 #ifndef DRIVINGSIMULATOR_JET_H
 #define DRIVINGSIMULATOR_JET_H
 
-#include "Vehicle.h"
+#include "PoweredVehicle.h"
 
 class Jet : public PoweredVehicle {
 

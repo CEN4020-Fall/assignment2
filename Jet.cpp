@@ -2,7 +2,7 @@
 // Created by Keith Van Dyke on 10/04/19
 //
 
-#include <cstdlib>
+#include <cstdlib>      //for random number generation
 #include "Jet.h"
 
 Jet::Jet(string brand, string model, int numEngines, string fuelType) {
@@ -24,9 +24,9 @@ void Jet::setEngineCount(int numEngines) {
 
 double Jet::mileageEstimate(double time) {
     int rand();
-    double mileage = ((rand() % 60) + 40) * time;
+    double mileage = ((rand() % 60) + 41) * time;   //generate 40-100
     if (fuelType == "Rocket" && numEngines > 2) {
-        mileage += (mileage * 0.055) * numEngines;
+        mileage += (mileage * 0.055) * numEngines;  //increase 5.5% of mileage for each engine
     }
     return mileage;
 }
