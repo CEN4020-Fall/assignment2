@@ -15,7 +15,8 @@ private:
 public:
 	Jet();
 	explicit Jet(string brand, string model, string fuelType,
-			int engineNum);		//number of engines to be copied to private data
+			int engineNum = 1);		//number of engines to be copied to 
+							//private data
 	virtual ~Jet();
 	int getNumberEngines();			//NW added
 	void setNumberEngines(int newNum);	//NW added
