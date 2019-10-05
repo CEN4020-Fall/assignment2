@@ -45,3 +45,18 @@ also an object of the parent class.
 III) Encapsulation is a concept of object-oriented programming where functions and data that 
 should not be accessible is made private from users. This is to avoid any undesirable 
 manipulation of sensitive data.
+
+i) The main difference between the two workflow models is the level of control that the 
+developers have to push to the blessed repository. In both models, developers can pull from the 
+blessed repository. However, this is where the two processes diverge.
+
+Integration management allows developers to push to their own public repositories. From that 
+point, an integration manager finds and resolves any conflicts between the different 
+repositories, and publishes the final repository to the blessed repository. In this version, the 
+developers have more direct control over what appears in the blessed repository.
+
+In the Dictators and Lieutenants workflow, devlopers must push their repositories to designated 
+"lieutenant" repositories. From there, a separate entity, the "dictator", merges the two 
+repositories and resolves any conflicts. This is called the dictator repository, which is then 
+pushed onto the blessed repository. This allows for more regulatory control over the developers' 
+individual contributions.
