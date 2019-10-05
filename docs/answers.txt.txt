@@ -67,7 +67,6 @@ changes to the same repository and solve any arising conflicts, the final produc
 dictator can push to it
 
 Object Oriented Question)
-
 It uses both encapsulation and polymorphism.
 
 The simulater is using encapsulation by having classes that encompass functions and by separating the member data and functions into different levels of protection. On the other hand, virtual functions are being used in the vehicle and powered vehicle classes so it has polymorphism. the common function name serves the purpose of polymorphism
