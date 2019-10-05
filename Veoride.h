@@ -1,3 +1,6 @@
+//
+// Created by Andres Paz
+//
 #ifndef DRIVINGSIMULATOR_VEORIDE_H
 #define DRIVINGSIMULATOR_VEORIDE_H
 
