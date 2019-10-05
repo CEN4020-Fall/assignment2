@@ -68,3 +68,7 @@ torrent of issues that would certainly arise from 100 different versions of one 
 coallesced into one product. This can also give the project manager a level of oversight by 
 allowing him to insert or remove any code that they may want before pushing it to the blessed 
 repository.
+
+
+FINAL: Polymorphism is used in the simulator to create the heterogenious list in main.cpp, and 
+encapsulation is used to store, access, and manipulate member data
