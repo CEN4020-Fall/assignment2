@@ -6,6 +6,8 @@
 #include <time.h>
 #include <math.h>
 
+Skateboard::Skateboard() {}
+
 Skateboard::Skateboard(string brand, string model) {
     setBrand(brand);
     setModel(model);

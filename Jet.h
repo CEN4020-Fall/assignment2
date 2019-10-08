@@ -12,7 +12,9 @@ private:
     int numberOfEngines;
 
 public:
-    Jet(string fuelType, int numEngines = 1);
+    Jet();
+
+    explicit Jet(string fuelType, int numEngines = 1);
 
     virtual ~Jet();
 

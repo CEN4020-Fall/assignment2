@@ -6,6 +6,11 @@
 #include <ctime>
 #include <random>
 
+Jet::Jet(){
+    setFuelType("Rocket");
+    setNumEngines(3);
+}
+
 Jet::Jet(string fuelType, int numEngines){
     setFuelType(fuelType);
     setNumEngines(numEngines);
