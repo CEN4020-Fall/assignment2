@@ -1,0 +1,31 @@
+Tutorials Date : 10/07/20
+Github Date: 10/08/20
+
+
+1: $ Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 677 bytes | 677.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Assign2' on GitHub by visiting:
+remote:      https://github.com/Vadim-FSU/assignment2/pull/new/Assign2
+remote:
+To https://github.com/Vadim-FSU/assignment2.git
+ * [new branch]      Assign2 -> Assign2
+Branch 'Assign2' set up to track remote branch 'Assign2' from 'origin'.
+
+2: 9 
+3: git rev-list --all --count
+4: 2020-10-08 01:44:30 -0500
+5: git log -1 --pretty="format:%ci" C:\Users\Vadim\Documents\GitHub\assignment2\README.md
+6: git log -- Vehicle.h
+7: git log --all --grep='file'
+8: Inheritance - when a class acquires the properties of the parent class.
+Polymorphism - functions/variables that behave differently in different contexts.
+Encapsulation - bundling data/operations together in an entity.
+9: The difference between the two is the structure of hierarchy. 
+10: It would be beneficial as the dictator gets to delegate most of the work in a structured manner. 
+It allows for more organization and strict control for the dictator in organizing large-scale projects.
