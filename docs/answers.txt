@@ -1,0 +1,67 @@
+Git Lab Tutorials: Oct. 5-6, 2020
+Setup the GitHub Account: August 26, 2020
+User name: Olhakit 
+pswd.: Bc6919ax
+
+Questions:
+1.	Paste the console output you saved at the end of step 3.C (2 points)
+
+Username for 'https://github.com': Olhakit
+Password for 'https://Olhakit@github.com':
+
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 1005 bytes | 1005.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Olhakit/assignment2
+   df7d4ee..4d8981b  master -> master
+
+2.	How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+11
+git rev-list --all --count
+
+3.	When was the README.md file modified last? Write the git command you used to get this information (4 points)
+
+2020-10-08 16:03:41 -0400 README.md
+
+git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ai" -- $filename) $filename"; done | sort
+
+4.	Mention two reasons why branches are used in a Git repository (4 points)
+
+a)	It isolates your work from that of other team members. All changes in the primary branch or other branches will not affect your branch, unless you decide to pull the latest changes from those branches.
+b)	Git's branch operations are inexpensive and frequently used. This flexibility enables powerful Git workflow customization. So, when you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way. The repository history remains unchanged. 
+
+
+5.	What is the difference between git log and git status? (4 points)
+
+The git log command displays committed snapshots. So, git log only operates on the committed history. It lets you list the project history, filter it, and search for specific changes. While git status lets you inspect the working directory and displays staged snapshots.
+
+6.	What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+git log --all Vehicle.h
+
+7.	What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+git log --all --grep='file'
+
+8.	In the context of object-oriented programming:
+-	(I) What is inheritance? 
+Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. For example: Bicycle Class becomes the superclass of MountainBike, RoadBike, and TandemBike Classes. 
+-	(II) What is polymorphism? 
+With polymorphism, a method or subclass can define its behaviors and attributes while retaining some of the functionality of its parent class. This means we can have a class that displays date and time, and then we can create a method to inherit the class but should display a welcome message alongside the date and time. 
+-	(III) What is encapsulation?
+Encapsulation is a programming style where implementation details are hidden, only methods are exposed. Programmer is not concerned by implementation details like codes in the class, he works only with operations and public variables. This helps to hide data from external modification and if any changes needed, only one class has to be modified.
+
+9.	What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+
+The “Dictator and Lieutenants” workflow is practically an extension to the “Integration manager” workflow. The only difference is that It is more suited to larger teams, where modules or sections of the code can be assigned to a Lieutenant who is responsible for blessing all of the changes to that particular section. Once the Lieutenants are happy with their code, they make it available to the Dictator. The Dictator then takes on a role similar to the Integration Manager from the previous model. In the end, all of the changes are pushed to the blessed repository for the developers at the bottom of the tree to pull from.
+
+10.	How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+Team should use Dictator and Lieutenants workflow since that will ensure better code quality before merging to master. 
+At “Centralized” workflow each developer has the same level of access to the repository and is considered as important as each other. For smaller teams, this method will work well, but as teams get larger, a Centralized method may get tedious. As more and more people start to access the same files, conflicts and other issues often begin appearing more often.
+
