@@ -1,0 +1,63 @@
+1. 
+On branch repo_tasks
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+2.
+git rev-list --all --count
+Output: 7
+
+3.
+gitk README.md //outputs a graphical interface of changes
+last change: 2021-10-15 17:27:39
+
+4.
+reason 1. protecting the main branch from undesired changes.
+reason 2. allows users to work separately on their own versions
+
+5.
+git log only looks at committed history
+git status inspects the whole working directory, including what files have not been committed.
+
+6.
+git log --follow Vehicle.h
+
+7.
+git log --all --grep="file"
+
+8.
+- Inheritance: refers to a child class inheriting attributes/methods from a parent class
+- Polymorphism: refers to the ability in OOP to use the same interface but come out with different results due to underlying structure
+- Encapsulation: refers to encapsulating data and the means to operate on that data together such as in a class.
+
+9.
+The main difference is that in the Dictator and Lieutenants workflow, the changes are first merged through the lieutenants before everything is brought together by the dictator
+In the Integration Manager workflow, the manager integrates everything himself (manager = dictator).
+
+10.
+A team of 100 developers would benefit from the D and L workflow compared to the centralized workflow in that their personal responsibility for ensuring there are no conflicts is
+highly reduced. The scale for resolving conflicts with 100 different devs surely becomes very big and confusing. The D and L workflow separates this problem into subproblems that are 
+easier with the lieutenants and then fully resolve it at the dictator step.
+
+
+- GitLab Tutorials:
+	- "Learn Git Branching"	-	10/15/2021
+	- "Visualizing Git"	-	10/15/2021
+	- try.github.io stuff	-	10/15/2021
+- Setup:
+	- Created GitHub Account: 	03/18/2021
+	- Downloaded Git Bash:		09/29/2021
+	- Forked Asg2 repo:		10/15/2021
+		- @: https://github.com/VP-Soup/assignment2
+	- Cloned Repo to local:		10/15/2021
+
+
+
+
+
+
+
+
