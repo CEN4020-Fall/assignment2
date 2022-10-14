@@ -1,0 +1,61 @@
+Git Lab Tutorials completed 10/12
+Git account setup 12/12/2019
+
+1. Paste the console output you saved at the end of step 3.C (2 points)
+    >>16788@DESKTOP-NCKFLN6 MINGW64 ~/Documents/GitHub/assignment3 (master)
+      $ git push
+      Enumerating objects: 11, done.
+      Counting objects: 100% (11/11), done.
+      Delta compression using up to 12 threads
+      Compressing objects: 100% (8/8), done.
+      Writing objects: 100% (9/9), 1.32 KiB | 1.32 MiB/s, done.
+      Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+      remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+      To https://github.com/Carlos-Solrac/assignment3.git
+         f4975e5..b32eb5c  master -> master
+
+2.  How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+    8 commits have been done,
+
+16788@DESKTOP-NCKFLN6 MINGW64 ~/Documents/GitHub/assignment3 (master)
+    $ git log
+
+3.  When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+    16788@DESKTOP-NCKFLN6 MINGW64 ~/Documents/GitHub/assignment3 (master)
+    $ git log README.md
+    commit b32eb5ced7b8bbbc5d385df0ab9bdc0258bfeec0
+    Author: Carlos-Solrac <58834635+Carlos-Solrac@users.noreply.github.com>
+    Date:   Fri Oct 14 08:32:29 2022 -0500
+
+         Updated information files
+        Updated the repository owner information in the README.md
+
+4.  Mention two reasons why branches are used in a Git repository (4 points)
+    Branches are useful to allow work to be done on parts of a program without possibly making a change that can damage other parts.
+
+5.  What is the difference between git log and git status? (4 points)
+    git log is to see the commit history of a project while git status lets you see the status of the working directory and the staging area.
+
+6.  What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+    git log -- Vehicle.h
+7.  What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+    git log -all grep='file'
+8.In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+    Inheritance is the property of passing on certain characteristics and functions/methods of a parent class to other
+    "subclasses" or "child" classes. It allows for the reuse the code from the parent class.
+
+    Polymorphism is the ability to redefine methods or functions to allow derived classes to use said functions,but with
+    slight differences in implementation.
+
+    Encapsulation refers to keeping the inner workings of a class private and thus hidden from the user. The user only
+    needs to know how to use the class, not how its implemented.
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+    In the dictator and lieutenants workflow developers push their changes to a lieutenants, and they then send ti to the
+     dictator, and they then push to the main branch. In an integration manager workflow developers have a public and
+     private repository which the integration manager pulls from and then pushes to the main repository.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+    Clearly, it would make more sense to have developers send their changes to someone  else (Lieutenants) to work out the merging rather than having developers
+    constantly having to constantly pull changes in order to push their own. It's possible there could be a long delay if a bunch of developers start pushing
+    at the same time.
